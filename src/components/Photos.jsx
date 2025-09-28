@@ -9,31 +9,31 @@ function Photos() {
   const photos = [
     {
       id: 1,
-      url: "src/assets/photos/photo_1.jpg",
+      url: "./assets/photos/photo_1.jpg",
       caption: "Team Photo",
       // description: "At European Rover Challenge 2025"
     },
     {
       id: 2,
-      url: "src/assets/photos/photo_2.jpg",
+      url: "./assets/photos/photo_2.jpg",
       caption: "Rover In Crabbing Mode",
       // description: "Collaborating with amazing teammates"
     },
     {
       id: 3,
-      url: "src/assets/photos/photo_3.jpg",
+      url: "./assets/photos/photo_3.jpg",
       caption: "Probing Task At ERC",
       // description: "Presenting at a technology conference"
     },
     {
       id: 4,
-      url: "src/assets/photos/photo_4.jpg",
+      url: "./assets/photos/photo_4.jpg",
       caption: "Rover",
       // description: "Leading a machine learning workshop"
     },
     {
       id: 5,
-      url: "src/assets/photos/photo_5.jpg",
+      url: "./assets/photos/photo_5.jpg",
       caption: "Debugging",
       // description: "Experimenting in the innovation lab"
     }

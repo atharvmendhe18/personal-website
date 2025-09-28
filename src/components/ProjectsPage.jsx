@@ -9,7 +9,7 @@ function ProjectsPage({ selectedProject, onNavigateHome }) {
       name: "Autonomous Rover: Avvyan",
       description: "Avvyan is a fully autonomous rover designed for exploration and navigation in unknown, uneven terrains. The ZED2 stereo camera served as the primary sensor, providing visual-inertial odometry (VIO) out of the box. However, to address drift and inaccuracy issues, RTAB-Map was integrated for SLAM, offering more reliable long-term mapping. The odometry from ZED2 and RTAB-Map was then fused using an Extended Kalman Filter (EKF) to achieve stable and consistent state estimation. For motion planning and control, Nav2 was utilized with the Regulated Pure Pursuit (RPP) controller and the SMAC Hybrid Planner, both of which support Ackermann-type motion—well-suited for the rover’s dynamics. Obstacle detection was handled through Nav2’s obstacle layer, enhanced by integrating a voxel layer that leveraged stereo point cloud data for 3D obstacle representation, enabling robust and safe navigation in unstructured environments.",
       mediaType: "image",
-      mediaUrl: "../assets/IMG_2224.jpg",
+      mediaUrl: "./assets/IMG_2224.jpg",
       technologies: [
         "ROS2",
         "Nav2",
@@ -42,7 +42,7 @@ function ProjectsPage({ selectedProject, onNavigateHome }) {
       name: "ArUco Marker Localization",
       description: "In Mars yard simulation environments, rover localization is a critical task for testing autonomous navigation systems. This project addresses the challenge of localizing a rover in a Mars yard using ArUco markers. The Mars yard contains several landmarks distributed throughout the environment, each serving as a reference point for the rover to determine its position. Unlike traditional GPS-based systems, this solution mimics the constraints faced on the actual Martian surface. Each landmark consists of four ArUco markers facing different directions, forming a 3D structure at each coordinate. The project implements two innovative localization approaches: one using two ArUco markers with geometric circle intersection, and another using a single marker combined with IMU data for continuous position tracking.",
       mediaType: "video",
-      mediaUrl: "../assets/my_localisation.mov",
+      mediaUrl: "./assets/my_localisation.mov",
       technologies: ["Python", "ROS2", "OpenCV", "NumPy", "ArUco Markers"],
       features: [
         "Dual-marker geometric localization using circle intersection",
@@ -64,7 +64,7 @@ function ProjectsPage({ selectedProject, onNavigateHome }) {
       name: "Autonomous Expedition (AutEx)",
       description: "An autonomous rover navigation system designed to traverse rugged terrain by detecting and following arrow signs to reach an endpoint marked by an orange traffic cone. The mission consists of multiple black arrow signs (30x20cm) on white backgrounds, elevated 10-50cm off the ground, with arrowheads pointing the direction the rover should navigate. The system features a custom-trained YOLOv8 object detection model specifically optimized for real-time deployment on NVIDIA Jetson Xavier NX with limited onboard resources. Using a ZED2 camera for its wide field of view, the rover continuously scans for arrows, aligns itself upon detection, maintains a 1-meter distance, turns in the indicated direction, and continues navigation until reaching the orange cone destination.",
       mediaType: "video",
-      mediaUrl: "../assets/Autex_final.mp4",
+      mediaUrl: "./assets/Autex_final.mp4",
       technologies: ["YOLOv8", "NVIDIA Jetson Xavier NX", "TensorRT", "ONNX", "ZED2 Camera", "PyTorch", "Computer Vision", "Edge Computing", "Real-time Object Detection", "ROS2", "Python"],
       features: [
         "Custom YOLOv8 model trained for arrow detection with high precision",
@@ -86,7 +86,7 @@ function ProjectsPage({ selectedProject, onNavigateHome }) {
   name: "Closed-Loop Steering Control for Holonomic Rover",
   description: "A holonomic rover with 360° independently steerable wheels. The project implements closed-loop control with PID loops specifically for the independent steering system on each wheel, using dual encoders to measure both steering angle and wheel rotation. Real-time feedback with PID controllers continuously monitors the steering angle and corrects deviations due to slip, backlash, or uneven terrain, enabling precise steering coordination and accurate omni-directional motion. The system supports multiple mobility modes including Ackermann steering, Spot Turn, and Swerve Drive, making the rover highly versatile in both constrained and open environments. The software integrates steering PID controllers with drive controllers and the higher-level motion planner via ROS2 for smooth trajectory tracking and robust teleoperation/autonomy.",
   mediaType: "video",
-  mediaUrl: "../assets/rover_mobility.mp4",
+  mediaUrl: "./assets/rover_mobility.mp4",
   technologies: ["ROS2", "Python", "PID Control", "Quadrature Encoders"],
   features: [
     "Independent 360° steering on each wheel with closed-loop PID control",
