@@ -18,9 +18,14 @@ function Home({ onNavigateToProjects }) {
               >
                 View My Work
               </button>
-              <button className="btn secondary">
+              <a 
+                href="./assets/atharv_mendhe_resume.pdf" 
+                download="Atharv_Mendhe_Resume.pdf"
+                className="btn secondary"
+                style={{ textDecoration: 'none', display: 'inline-block' }}
+              >
                 Download Resume
-              </button>
+              </a>
             </div>
           </div>
         </div>
