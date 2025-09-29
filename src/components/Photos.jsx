@@ -15,7 +15,7 @@ function Photos() {
     },
     {
       id: 2,
-      url: "./assets/photos/photo_2.jpg",
+      url: "./assets/photos/photo_2.JPG",
       caption: "Rover In Crabbing Mode",
       // description: "Collaborating with amazing teammates"
     },
