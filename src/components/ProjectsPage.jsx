@@ -42,7 +42,7 @@ function ProjectsPage({ selectedProject, onNavigateHome }) {
       name: "ArUco Marker Localization",
       description: "In Mars yard simulation environments, rover localization is a critical task for testing autonomous navigation systems. This project addresses the challenge of localizing a rover in a Mars yard using ArUco markers. The Mars yard contains several landmarks distributed throughout the environment, each serving as a reference point for the rover to determine its position. Unlike traditional GPS-based systems, this solution mimics the constraints faced on the actual Martian surface. Each landmark consists of four ArUco markers facing different directions, forming a 3D structure at each coordinate. The project implements two innovative localization approaches: one using two ArUco markers with geometric circle intersection, and another using a single marker combined with IMU data for continuous position tracking.",
       mediaType: "video",
-      mediaUrl: "./assets/my_localisation.mov",
+      mediaUrl: "./assets/my_localisation.mp4",
       technologies: ["Python", "ROS2", "OpenCV", "NumPy", "ArUco Markers"],
       features: [
         "Dual-marker geometric localization using circle intersection",
