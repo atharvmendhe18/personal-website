@@ -24,20 +24,26 @@ function Projects({ onNavigateToProjects }) {
       liveUrl: "#",
       githubUrl: "#"
     },
-    {
-      id: 2,
-      name: "ArUco Marker Localization",
-      description: "In Mars yard simulation environments, rover localization is a critical task for testing autonomous navigation systems. This project addresses the challenge of localizing a rover in a Mars yard using ArUco markers. The Mars yard contains several landmarks distributed throughout the environment, each serving as a reference point for the rover to determine its position.",
-      shortDescription: "Mars yard rover localization using ArUco markers and geometric algorithms",
-      mediaType: "video",
-      mediaUrl: "./assets/my_localisation.mp4",
-      technologies: ["Python 3.8", "ROS 2 Humble", "OpenCV", "NumPy", "ArUco Markers", "IMU Integration"],
-      liveUrl: "#",
-      githubUrl: "https://github.com/atharvmendhe18/aruco_marker_localization",
-
-      challenges: "The biggest challenge was handling the complex multi-marker-per-landmark scenario where each landmark has four ArUco markers facing different directions. Standard ArUco localization libraries aren't designed for this setup. I had to develop custom algorithms to handle multiple simultaneous marker observations, calculate distance and orientation from different marker faces, and disambiguate the rover's position when multiple intersection points are possible. Another challenge was maintaining accurate coordinate system relationships between local rover frame and global Mars yard coordinates.",
-      outcome: "Successfully developed two robust localization methods that work in Mars-like environments without GPS. The dual-marker approach provides high accuracy through geometric intersection, while the single-marker + IMU method enables continuous localization with minimal landmark visibility. The system has been tested in simulation environments and demonstrates reliable position tracking for autonomous rover navigation in complex terrain with distributed landmark structures."
-    },
+{
+  id: 3,
+  name: "Closed-Loop Steering Control for Holonomic Rover",
+  description: "A holonomic rover with 360° independently steerable wheels. The project implements closed-loop control with PID loops specifically for the independent steering system on each wheel, using dual encoders to measure both steering angle and wheel rotation. Real-time feedback with PID controllers continuously monitors the steering angle and corrects deviations due to slip, backlash, or uneven terrain, enabling precise steering coordination and accurate omni-directional motion. The system supports multiple mobility modes including Ackermann steering, Spot Turn, and Swerve Drive, making the rover highly versatile in both constrained and open environments. The software integrates steering PID controllers with drive controllers and the higher-level motion planner via ROS2 for smooth trajectory tracking and robust teleoperation/autonomy.",
+  mediaType: "video",
+  mediaUrl: "./assets/rover_mobility.mp4",
+  technologies: ["ROS2", "Python", "PID Control", "Quadrature Encoders"],
+  features: [
+    "Independent 360° steering on each wheel with closed-loop PID control",
+    "Dual-encoder feedback loop for precise steering-angle measurement",
+    "Per-wheel PID loop to maintain accurate steering angle",
+    "Coordinated steering + drive control for holonomic motion",
+    "Real-time correction for slippage and mechanical backlash",
+    "Supports Ackermann steering, Spot Turn, and Swerve Drive mobility modes"
+  ],
+  liveUrl: "#",
+  githubUrl: "#",
+  challenges: "Designing and tuning the PID loop for stable steering control, especially under mechanical backlash and encoder noise. Synchronizing multiple steering controllers without adding latency was critical, as was ensuring PID responsiveness without overshoot.",
+  outcome: "Implemented feedback-controlled PID steering that significantly improved steering angle accuracy and coordination across wheels, enabling versatile mobility modes such as Ackermann steering, Spot Turn, and Swerve Drive. This resulted in smoother omni-directional motion and more reliable trajectory following in both autonomous and teleoperated modes."
+},
     {
       id: 3,
       name: "Autonomous Expedition (AutEx)",
