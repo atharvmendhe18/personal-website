@@ -25,12 +25,10 @@ function ProjectsPage({ selectedProject, onNavigateHome }) {
       features: [
         "Visual-Inertial Odometry (VIO) with ZED2",
         "SLAM with RTAB-Map for robust mapping",
-        "Sensor fusion using EKF for stable state estimation",
+        "Sensor fusion using EKF",
         "Ackermann motion planning with Nav2 (RPP + SMAC)",
-        "3D obstacle detection with voxel layer integration",
-        "Autonomous navigation in unknown, uneven terrains",
+        "3D obstacle detection",
         "Real-time mapping and path replanning",
-        "ROS 2 modular architecture for extensibility"
       ],
       liveUrl: "#",
       githubUrl: "#",
@@ -45,14 +43,9 @@ function ProjectsPage({ selectedProject, onNavigateHome }) {
       mediaUrl: "./assets/my_localisation.mp4",
       technologies: ["Python", "ROS2", "OpenCV", "NumPy", "ArUco Markers"],
       features: [
-        "Dual-marker geometric localization using circle intersection",
-        "Single-marker localization with IMU yaw integration",
-        "Multi-marker-per-landmark support for complex environments",
         "Real-time pose estimation and marker detection",
         "Coordinate system transformation (local to global)",
-        "Robust position disambiguation algorithms",
         "ROS2 integration with transform publishing",
-        "Camera calibration and distortion correction"
       ],
       liveUrl: "#",
       githubUrl: "#",
@@ -72,9 +65,7 @@ function ProjectsPage({ selectedProject, onNavigateHome }) {
         "TensorRT optimization for NVIDIA Jetson Xavier NX",
         "Real-time inference with 40x performance improvement (1.2s to 30ms)",
         "ZED2 camera integration for wide field of view scanning",
-        "Autonomous navigation with precise alignment and distance control",
         "Robust detection across varying lighting and terrain conditions",
-        "Sequential arrow following until orange cone endpoint detection"
       ],
       liveUrl: "#",
       githubUrl: "#",
