@@ -161,7 +161,7 @@ function ProjectsPage({ selectedProject, onNavigateHome }) {
                 <p className="project-description">{project.description}</p>
                 
                 <div className="project-section">
-                  <h3>🛠️ Technologies Used</h3>
+                  <h3>Technologies Used</h3>
                   <div className="technologies-detailed">
                     {project.technologies.map((tech, index) => (
                       <span key={index} className="tech-tag-detailed">{tech}</span>
@@ -170,7 +170,7 @@ function ProjectsPage({ selectedProject, onNavigateHome }) {
                 </div>
                 
                 <div className="project-section">
-                  <h3>✨ Key Features</h3>
+                  <h3>Key Features</h3>
                   <ul className="features-list">
                     {project.features.map((feature, index) => (
                       <li key={index}>{feature}</li>
@@ -179,12 +179,12 @@ function ProjectsPage({ selectedProject, onNavigateHome }) {
                 </div>
                 
                 <div className="project-section">
-                  <h3>🎯 Challenges & Solutions</h3>
+                  <h3>Challenges & Solutions</h3>
                   <p>{project.challenges}</p>
                 </div>
                 
                 <div className="project-section">
-                  <h3>📊 Outcome & Impact</h3>
+                  <h3>Outcome & Impact</h3>
                   <p>{project.outcome}</p>
                 </div>
               </div>

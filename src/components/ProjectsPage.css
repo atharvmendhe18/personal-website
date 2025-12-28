@@ -193,7 +193,7 @@
 }
 
 .features-list li:before {
-  content: '✓';
+  content: '';
   position: absolute;
   left: 0;
   color: #28a745;
