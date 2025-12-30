@@ -34,8 +34,6 @@ function Projects({ onNavigateToProjects }) {
   features: [
     "Independent 360° steering on each wheel with closed-loop PID control",
     "Dual-encoder feedback loop for precise steering-angle measurement",
-    "Per-wheel PID loop to maintain accurate steering angle",
-    "Coordinated steering + drive control for holonomic motion",
     "Real-time correction for slippage and mechanical backlash",
     "Supports Ackermann steering, Spot Turn, and Swerve Drive mobility modes"
   ],
@@ -114,22 +112,22 @@ function Projects({ onNavigateToProjects }) {
                 {/* Expanded content shown on hover */}
                 <div className="expanded-content">
                   <div className="expanded-section">
-                    <h4>📝 Full Description</h4>
+                    <h4>Full Description</h4>
                     <p>{project.description}</p>
                   </div>
                   
-                  <div className="expanded-section">
-                    <h4>🛠️ All Technologies</h4>
+                  {/* <div className="expanded-section">
+                    <h4>All Technologies</h4>
                     <div className="technologies-expanded">
                       {project.technologies.map((tech, index) => (
                         <span key={index} className="tech-tag-expanded">{tech}</span>
                       ))}
                     </div>
-                  </div>
+                  </div> */}
                   
                   {project.features && (
                     <div className="expanded-section">
-                      <h4>✨ Key Features</h4>
+                      <h4>Key Features</h4>
                       <ul className="features-preview">
                         {project.features.slice(0, 4).map((feature, index) => (
                           <li key={index}>{feature}</li>
@@ -142,12 +140,12 @@ function Projects({ onNavigateToProjects }) {
                   )}
                   
                   <div className="expanded-section">
-                    <h4>🎯 Challenge</h4>
+                    <h4>Challenge</h4>
                     <p>{project.challenges}</p>
                   </div>
                   
                   <div className="expanded-section">
-                    <h4>📊 Outcome</h4>
+                    <h4>Outcome</h4>
                     <p>{project.outcome}</p>
                   </div>
                   
